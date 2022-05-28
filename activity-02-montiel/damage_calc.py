@@ -1,7 +1,4 @@
-#import the random module
 import random
-
-# modifiers value
 modifiers = {
     "target": 1,
     "weather": 1,
@@ -14,7 +11,6 @@ modifiers = {
     'other': 1,
 }
 
-# product of all modifiers
 sumMod = 1
 for x in modifiers: 
     sumMod *= modifiers[x]
@@ -25,6 +21,4 @@ a = 205
 d = 188
 
 damage = ((((((2 * level)/5) + 2) * power * (a/5))/50) + 2) * float(sumMod)
-
-# print the damage
 print(damage)
